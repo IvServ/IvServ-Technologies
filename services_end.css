@@ -45,7 +45,7 @@
 {
     display:flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width:100%;
     margin:20px 0;
     /* border: 1px solid orange; */
@@ -155,44 +155,3 @@ div.container
 
 
 
-
-.footer
-{
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    width:100%;
-    height:25vh;
-    background-color:white;
-}
-
-.footer .line
-{
-    text-align:center;
-    border-bottom:3px solid black;
-    width:75%;
-    margin-bottom: 30px;
-}
-
-.footerending
-{
-    display: flex;
-    align-items:center;
-    justify-content:space-evenly;
-    flex-direction: row;
-}
-.footerending div{
-    margin:0 25px;
-}
-
-.footer .contentfooter
-{
-    margin:2rem 0;
-}
-.footer .claim
-{
-    font-size: 20px;
-    text-align: center;
-
-}
