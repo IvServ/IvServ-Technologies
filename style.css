@@ -54,21 +54,25 @@ body {
     
     
 }
+.navbar-links ul li{
+    position: relative;
+}
 
 .navbar-links li {
     list-style: none;
     width:50%;
     text-align: center;
+    /* background-color: orange; */
     transition: all .5s ;
     /* margin: 0 6px; */
-    margin:0 2px;
+    margin:0 5px;
 }
 
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: black;
-    padding: 1rem;
+    color: #ee6c4d;
+    padding: .2em;
     font-size:18px;
     font-weight:bolder;
     
@@ -77,8 +81,7 @@ body {
 .navbar-links li:hover {
     background-color: black;
     transform: translateY(3px);
-    
-    
+    /* color:white; */
 }
 .navbar-links li a:hover {
     color: white;
@@ -95,11 +98,100 @@ body {
     height: 21px;
 }
 
+.navbar-links ul li ul{
+    display:none;
+    position:absolute;
+    width: 100%;
+    font-size: .5em;
+    background-color: white;
+    /* padding: 10px; */
+
+}
+.navbar-links ul li:hover ul{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+
+}
+
+/* .navbar-links ul li ul {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+} */
+.navbar-links ul li ul li {
+   width: 100%;
+   /* border-radius: 0px 0px 5px 5px; */
+
+   
+}
+
+.navbar-links ul li ul li a:hover{
+    color:white;
+    background-color: transparent;
+    background-color:#ee6c4d;
+
+ }
+ #dropdown {
+    margin-top: 5px;
+ }
+
+/* 
+#dropservice
+{
+    background-color:transparent;
+    color: white;
+    font-size:10px;
+    cursor:pointer;
+
+}
+.dropdown a{
+    margin:5px 0;
+}
+#dropservice:hover{
+    background-color:black;
+    color: white;
+}
+.dropdown
+{
+    display:none;
+    position:absolute;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    z-index: 1;
+}
+
+.dropdown a:hover{
+    background-color:transparent;
+    background-color: #ee6c4d;
+    color: white;
+   
+    width: 100%; 
+}
+
+#dropservice:hover .dropdown
+{
+    color: white;
+    display:block;
+}
+
+#dropservice :hover .dropdown:hover #dropservice{
+    color:white;
+} */
+
+
 .toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: black;
     border-radius: 10px;
+
 }
 
 @media (max-width: 800px) {
@@ -135,4 +227,33 @@ body {
     .navbar-links.active {
         display: flex;
     }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        align-items:left;
+        padding:10px;
+       
+        width:25%;
+        display: none;
+    }
+    .navbar-links ul li ul{
+        display:none;
+        position:absolute;
+        width: 100%;
+        background-color:white;
+        /* padding: 10px; */
+    
+    }
+    .navbar-links ul li:hover ul{
+    
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+       
+    
+    }
+    
+    
 }
